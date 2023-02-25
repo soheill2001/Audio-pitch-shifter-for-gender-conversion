@@ -4,9 +4,9 @@ This Python code provides a simple way to shift the pitch of an audio file to ma
 ## Installation
 Before using the code, you must install the following dependencies:
 ```
-+ python
-+ numpy
-+ pydub
+python
+numpy
+pydub
 ```
 You can install the dependencies using the following command:
 ```
