@@ -16,14 +16,14 @@ pip install -r requirements.txt
 The code is designed to be run from the command line using the python command. Here is an example command that converts an audio file to a female voice:
 
 ```
-python pitch_shifter.py --voice_path input.wav --output_path output.wav --gender female
+python Gender_Changer.py --voice_path input.wav --output_path output.wav --gender female
 ```
 The command specifies the path to the input audio file (`input.wav`), the path to the output audio file (`output.wav`), and the desired gender (`female`).
 
 If the gender parameter is not provided, the code will attempt to automatically determine the gender based on the dBFS level of the audio file. If the dBFS level is greater than -20, the code will assume the gender is female. Otherwise, it will assume the gender is male.
 
 ```
-python pitch_shifter.py --voice_path input.wav --output_path output.wav
+python Gender_Changer.py --voice_path input.wav --output_path output.wav
 ```
 ## How it works
 The code defines a function called `shift_pitch_gender` that takes two arguments: `sound` and `gender`. The `sound` argument is an instance of the `AudioSegment` class that represents the input audio file. The `gender` argument is a string that specifies the desired gender of the output audio file. If no gender is specified, the code attempts to automatically determine the gender based on the dBFS level of the input audio file.
